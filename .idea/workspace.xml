@@ -1,7 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a45588f-0d91-4d42-bc3d-8959ff53b70c" name="Default" comment="" />
+    <list default="true" id="0a45588f-0d91-4d42-bc3d-8959ff53b70c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8e9ca8f2-76d2-4b71-853b-dbd4d9dcc50d.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8e9ca8f2-76d2-4b71-853b-dbd4d9dcc50d/storage_v2/_src_/database/test.kkQ2AA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/8e9ca8f2-76d2-4b71-853b-dbd4d9dcc50d/storage_v2/_src_/database/test.kkQ2AA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Job.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/jsa-app.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/springboot-quartz.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/src/main/java/com/jverson/quartz/Job_db/JobRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/src/main/java/com/jverson/quartz/Job_db/JobService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/src/main/java/com/jverson/quartz/QuartzApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/src/main/java/com/jverson/quartz/conf/SchedulerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/src/main/java/com/jverson/quartz/job/QuartzJobFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/src/main/java/com/jverson/quartz/job/ScheduleJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/src/main/java/com/jverson/quartz/job/job.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/src/main/java/com/jverson/quartz/mq/RabbitMqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/src/main/java/com/jverson/quartz/mq/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/src/main/java/com/jverson/quartz/service/ScheduleJobService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/src/main/java/com/jverson/quartz/spring/AutowiringSpringBeanJobFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/src/main/resources/db/quartz_tables_h2.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/src/main/resources/quartz.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Qurtez_job/src/test/java/com/jverson/quartz/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsa-app.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/SpringRabbitMqProducer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/jsa-app.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/javasampleapproach/rabbitmq/SpringRabbitMqProducerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/javasampleapproach/rabbitmq/config/RabbitMqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/javasampleapproach/rabbitmq/model/Job.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/java/com/javasampleapproach/rabbitmq/producer/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/src/test/java/com/javasampleapproach/rabbitmq/SpringRabbitMqProducerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/com/javasampleapproach/rabbitmq/SpringRabbitMqProducerApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/com/javasampleapproach/rabbitmq/config/RabbitMqConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/com/javasampleapproach/rabbitmq/model/Job.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/com/javasampleapproach/rabbitmq/producer/Producer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/classes/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/producer/target/test-classes/com/javasampleapproach/rabbitmq/SpringRabbitMqProducerApplicationTests.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/producer/target/" />
@@ -57,29 +108,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Qurtez_job/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+            <state relative-caret-position="1050">
+              <caret line="70" selection-start-line="70" selection-end-line="70" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Qurtez_job/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state>
+              <caret lean-forward="true" selection-end-line="1" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quartz.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Qurtez_job/target/classes/quartz.properties">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="quartz.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Qurtez_job/src/main/resources/quartz.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -123,15 +179,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractAutowireCapableBeanFactory.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.7.RELEASE/spring-beans-4.3.7.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3866">
-              <caret line="482" selection-start-line="482" selection-end-line="482" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -148,6 +195,9 @@
       <find>qrtz_triggers</find>
       <find>h2</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
@@ -198,6 +248,7 @@
     <option name="width" value="927" />
     <option name="height" value="736" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -459,7 +510,7 @@
       <updated>1532347469318</updated>
       <workItem from="1532347472420" duration="963000" />
       <workItem from="1532348539544" duration="1769000" />
-      <workItem from="1532421708383" duration="7882000" />
+      <workItem from="1532421708383" duration="8709000" />
     </task>
     <servers />
   </component>
@@ -469,7 +520,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10614000" />
+    <option name="totallyTimeSpent" value="11441000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -482,7 +533,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="-4" width="1867" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -501,11 +551,11 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="8" visible="true" weight="0.16989248" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run Dashboard" order="8" weight="0.5139785" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32847896" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32795697" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.4989224" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2284459" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
@@ -724,21 +774,24 @@
     <entry file="file://$PROJECT_DIR$/Qurtez_job/src/main/resources/quartz.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Qurtez_job/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Qurtez_job/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+        <state relative-caret-position="1050">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qurtez_job/target/classes/quartz.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Qurtez_job/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" selection-end-line="1" />
         </state>
       </provider>
     </entry>
