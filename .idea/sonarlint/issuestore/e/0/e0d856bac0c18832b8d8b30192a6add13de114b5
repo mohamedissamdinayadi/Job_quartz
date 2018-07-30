@@ -1,0 +1,13 @@
+
+asquid:UnusedPrivateMethode"<Remove this unused private "updateJobCronExpression" method.(ž€á
+@squid:S1148‚"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+csquid:S00112&"FDefine and throw a dedicated exception instead of using a generic one.(®“Š¼üÿÿÿÿ
+^squid:UnusedPrivateMethodp"4Remove this unused private "wrapScheduleJob" method.(¾¿ô“ùÿÿÿÿ
+Tsquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
+^squid:S001121"FDefine and throw a dedicated exception instead of using a generic one.(ÓèÍ°
+dsquid:UselessImportCheck";Remove this unused import 'org.quartz.JobExecutionContext'.(ðÑ¯”ûÿÿÿÿ
+hsquid:UselessImportCheck"DRemove this unused import 'com.jverson.quartz.Job_db.JobRepository'.(öêÒ
+Tsquid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
+esquid:UselessImportCheck"BRemove this unused import 'org.quartz.impl.matchers.GroupMatcher'.(¢ÁûU
+Ssquid:UselessImportCheck"*Remove this unused import 'java.util.Set'.(ö²„¤þÿÿÿÿ
+}squid:S1488"`Immediately return this expression instead of assigning it to the temporary variable "metaData".(ÓÎôŸýÿÿÿÿ

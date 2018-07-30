@@ -1,0 +1,339 @@
+2018-07-23 11:33:34.915  INFO 23621 --- [main] c.j.r.SpringRabbitMqProducerApplication  : Starting SpringRabbitMqProducerApplication on asus-X550JK with PID 23621 (started by asus in /home/asus/workspace intellij/exmple rabbitmq/exmple de quartz job/springboot-quartz-master)
+2018-07-23 11:33:34.917  INFO 23621 --- [main] c.j.r.SpringRabbitMqProducerApplication  : No active profile set, falling back to default profiles: default
+2018-07-23 11:33:34.960  INFO 23621 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6b19b79: startup date [Mon Jul 23 11:33:34 CET 2018]; root of context hierarchy
+2018-07-23 11:33:35.459  INFO 23621 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$68a965f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-23 11:33:35.837  INFO 23621 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-23 11:33:35.842  INFO 23621 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-07-23 11:33:35.844  INFO 23621 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-07-23 11:33:35.856  INFO 23621 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2018-07-23 11:33:35.856  INFO 23621 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-07-23 11:33:35.962  INFO 23621 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#a202ccb:0/SimpleConnection@34997338 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 36188]
+2018-07-23 11:33:35.965  INFO 23621 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (jsa.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2018-07-23 11:33:35.991  INFO 23621 --- [main] c.j.r.SpringRabbitMqProducerApplication  : Started SpringRabbitMqProducerApplication in 1.333 seconds (JVM running for 1.801)
+2018-07-23 11:33:42.838  INFO 23621 --- [Thread-4] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6b19b79: startup date [Mon Jul 23 11:33:34 CET 2018]; root of context hierarchy
+2018-07-23 11:33:42.840  INFO 23621 --- [Thread-4] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-07-23 11:33:42.840  INFO 23621 --- [Thread-4] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2018-07-23 11:33:42.841  INFO 23621 --- [Thread-4] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-23 11:33:42.842  INFO 23621 --- [Thread-4] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-07-23 11:38:32.979  INFO 24345 --- [main] c.j.r.SpringRabbitMqProducerApplication  : Starting SpringRabbitMqProducerApplication on asus-X550JK with PID 24345 (started by asus in /home/asus/workspace intellij/exmple rabbitmq/exmple de quartz job/springboot-quartz-master)
+2018-07-23 11:38:32.981  INFO 24345 --- [main] c.j.r.SpringRabbitMqProducerApplication  : No active profile set, falling back to default profiles: default
+2018-07-23 11:38:33.026  INFO 24345 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6b19b79: startup date [Mon Jul 23 11:38:33 CET 2018]; root of context hierarchy
+2018-07-23 11:38:33.474  INFO 24345 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$de00b1f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-23 11:38:33.589  WARN 24345 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springRabbitMqProducerApplication': Unsatisfied dependency expressed through field 'producer'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'producer' defined in file [/home/asus/workspace intellij/exmple rabbitmq/exmple de quartz job/RabbitMqProducer/target/classes/com/javasampleapproach/rabbitmq/producer/Producer.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanInitializationException: Could not register rabbit listener endpoint on [public void com.javasampleapproach.rabbitmq.producer.Producer.recievedMessage()] for bean producer, no RabbitListenerContainerFactory with id 'jsaFactory' was found in the application context; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'jsaFactory' available
+2018-07-23 11:38:33.596  INFO 24345 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-07-23 11:38:33.655 ERROR 24345 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field producer in com.javasampleapproach.rabbitmq.SpringRabbitMqProducerApplication required a bean named 'jsaFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'jsaFactory' in your configuration.
+
+2018-07-23 11:39:13.027  INFO 24527 --- [main] c.j.r.SpringRabbitMqProducerApplication  : Starting SpringRabbitMqProducerApplication on asus-X550JK with PID 24527 (started by asus in /home/asus/workspace intellij/exmple rabbitmq/exmple de quartz job/springboot-quartz-master)
+2018-07-23 11:39:13.028  INFO 24527 --- [main] c.j.r.SpringRabbitMqProducerApplication  : No active profile set, falling back to default profiles: default
+2018-07-23 11:39:13.064  INFO 24527 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6b19b79: startup date [Mon Jul 23 11:39:13 CET 2018]; root of context hierarchy
+2018-07-23 11:39:13.494  INFO 24527 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$68a965f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-23 11:39:13.860  INFO 24527 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-23 11:39:13.865  INFO 24527 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-07-23 11:39:13.868  INFO 24527 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-07-23 11:39:13.969  INFO 24527 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2018-07-23 11:39:13.969  INFO 24527 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-07-23 11:39:13.992  INFO 24527 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#45b66a1b:0/SimpleConnection@6ae6e2ad [delegate=amqp://guest@127.0.0.1:5672/, localPort= 36322]
+2018-07-23 11:39:13.994  INFO 24527 --- [SimpleAsyncTaskExecutor-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (jsa.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2018-07-23 11:39:14.061  INFO 24527 --- [main] c.j.r.SpringRabbitMqProducerApplication  : Started SpringRabbitMqProducerApplication in 1.241 seconds (JVM running for 1.634)
+2018-07-23 11:39:14.142  WARN 24527 --- [SimpleAsyncTaskExecutor-1] s.a.r.l.ConditionalRejectingErrorHandler : Execution of Rabbit message listener failed.
+
+org.springframework.amqp.rabbit.listener.exception.ListenerExecutionFailedException: Listener threw exception
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.wrapToListenerExecutionFailedExceptionIfNeeded(AbstractMessageListenerContainer.java:915)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:825)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:745)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$001(SimpleMessageListenerContainer.java:97)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$1.invokeListener(SimpleMessageListenerContainer.java:189)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.invokeListener(SimpleMessageListenerContainer.java:1276)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListener(AbstractMessageListenerContainer.java:726)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doReceiveAndExecute(SimpleMessageListenerContainer.java:1219)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.receiveAndExecute(SimpleMessageListenerContainer.java:1189)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1500(SimpleMessageListenerContainer.java:97)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1421)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.amqp.support.converter.MessageConversionException: failed to resolve class name. Class not found [com.jverson.quartz.job.ScheduleJob]
+	at org.springframework.amqp.support.converter.DefaultJackson2JavaTypeMapper.getClassIdType(DefaultJackson2JavaTypeMapper.java:121)
+	at org.springframework.amqp.support.converter.DefaultJackson2JavaTypeMapper.toJavaType(DefaultJackson2JavaTypeMapper.java:88)
+	at org.springframework.amqp.support.converter.Jackson2JsonMessageConverter.fromMessage(Jackson2JsonMessageConverter.java:163)
+	at org.springframework.amqp.rabbit.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:236)
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter$MessagingMessageConverterAdapter.extractPayload(MessagingMessageListenerAdapter.java:216)
+	at org.springframework.amqp.support.converter.MessagingMessageConverter.fromMessage(MessagingMessageConverter.java:118)
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.toMessagingMessage(MessagingMessageListenerAdapter.java:116)
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:102)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:822)
+	... 10 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.jverson.quartz.job.ScheduleJob
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:250)
+	at org.springframework.amqp.support.converter.DefaultJackson2JavaTypeMapper.getClassIdType(DefaultJackson2JavaTypeMapper.java:118)
+	... 18 common frames omitted
+
+2018-07-23 11:39:14.143  WARN 24527 --- [SimpleAsyncTaskExecutor-1] ingErrorHandler$DefaultExceptionStrategy : Fatal message conversion error; message rejected; it will be dropped or routed to a dead letter exchange, if so configured: (Body:'{"jobId":"6","jobName":"job_name_test","jobGroup":"job_group_test","jobStatus":"Normal","cronExpression":"0/5 * * * * ?","desc":"i am job number test","interfaceName":"test"}' MessageProperties [headers={__TypeId__=com.jverson.quartz.job.ScheduleJob}, timestamp=null, messageId=null, userId=null, receivedUserId=null, appId=null, clusterId=null, type=null, correlationId=null, correlationIdString=null, replyTo=null, contentType=application/json, contentEncoding=UTF-8, contentLength=0, deliveryMode=null, receivedDeliveryMode=PERSISTENT, expiration=null, priority=0, redelivered=false, receivedExchange=jsa.exchange, receivedRoutingKey=jsa.routingkey, receivedDelay=null, deliveryTag=1, messageCount=0, consumerTag=amq.ctag-DWNskzTyl5hNpQrwq2PTcg, consumerQueue=jsa.queue])
+2018-07-23 11:40:14.759  INFO 24527 --- [Thread-5] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6b19b79: startup date [Mon Jul 23 11:39:13 CET 2018]; root of context hierarchy
+2018-07-23 11:40:14.760  INFO 24527 --- [Thread-5] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-07-23 11:40:14.762  INFO 24527 --- [Thread-5] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2018-07-23 11:40:15.163  INFO 24527 --- [Thread-5] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2018-07-23 11:40:15.164  INFO 24527 --- [Thread-5] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2018-07-23 11:40:15.165  INFO 24527 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-23 11:40:15.166  INFO 24527 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-07-23 11:40:16.255  INFO 24686 --- [main] c.j.r.SpringRabbitMqProducerApplication  : Starting SpringRabbitMqProducerApplication on asus-X550JK with PID 24686 (started by asus in /home/asus/workspace intellij/exmple rabbitmq/exmple de quartz job/springboot-quartz-master)
+2018-07-23 11:40:16.257  INFO 24686 --- [main] c.j.r.SpringRabbitMqProducerApplication  : No active profile set, falling back to default profiles: default
+2018-07-23 11:40:16.291  INFO 24686 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6b19b79: startup date [Mon Jul 23 11:40:16 CET 2018]; root of context hierarchy
+2018-07-23 11:40:16.712  INFO 24686 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$46aaab49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-23 11:40:17.073  INFO 24686 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-23 11:40:17.078  INFO 24686 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-07-23 11:40:17.080  INFO 24686 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-07-23 11:40:17.161  INFO 24686 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2018-07-23 11:40:17.161  INFO 24686 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-07-23 11:40:17.179  INFO 24686 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#45aefea2:0/SimpleConnection@2387ed72 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 36350]
+2018-07-23 11:40:17.181  INFO 24686 --- [SimpleAsyncTaskExecutor-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (jsa.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2018-07-23 11:40:17.246  INFO 24686 --- [main] c.j.r.SpringRabbitMqProducerApplication  : Started SpringRabbitMqProducerApplication in 1.186 seconds (JVM running for 1.584)
+2018-07-23 11:40:17.253  WARN 24686 --- [SimpleAsyncTaskExecutor-1] s.a.r.l.ConditionalRejectingErrorHandler : Execution of Rabbit message listener failed.
+
+org.springframework.amqp.rabbit.listener.exception.ListenerExecutionFailedException: Listener threw exception
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.wrapToListenerExecutionFailedExceptionIfNeeded(AbstractMessageListenerContainer.java:915)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:825)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:745)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$001(SimpleMessageListenerContainer.java:97)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$1.invokeListener(SimpleMessageListenerContainer.java:189)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.invokeListener(SimpleMessageListenerContainer.java:1276)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListener(AbstractMessageListenerContainer.java:726)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doReceiveAndExecute(SimpleMessageListenerContainer.java:1219)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.receiveAndExecute(SimpleMessageListenerContainer.java:1189)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1500(SimpleMessageListenerContainer.java:97)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1421)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.amqp.support.converter.MessageConversionException: failed to resolve class name. Class not found [com.jverson.quartz.job.ScheduleJob]
+	at org.springframework.amqp.support.converter.DefaultJackson2JavaTypeMapper.getClassIdType(DefaultJackson2JavaTypeMapper.java:121)
+	at org.springframework.amqp.support.converter.DefaultJackson2JavaTypeMapper.toJavaType(DefaultJackson2JavaTypeMapper.java:88)
+	at org.springframework.amqp.support.converter.Jackson2JsonMessageConverter.fromMessage(Jackson2JsonMessageConverter.java:163)
+	at org.springframework.amqp.rabbit.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:236)
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter$MessagingMessageConverterAdapter.extractPayload(MessagingMessageListenerAdapter.java:216)
+	at org.springframework.amqp.support.converter.MessagingMessageConverter.fromMessage(MessagingMessageConverter.java:118)
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.toMessagingMessage(MessagingMessageListenerAdapter.java:116)
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:102)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:822)
+	... 10 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.jverson.quartz.job.ScheduleJob
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:250)
+	at org.springframework.amqp.support.converter.DefaultJackson2JavaTypeMapper.getClassIdType(DefaultJackson2JavaTypeMapper.java:118)
+	... 18 common frames omitted
+
+2018-07-23 11:40:17.254  WARN 24686 --- [SimpleAsyncTaskExecutor-1] ingErrorHandler$DefaultExceptionStrategy : Fatal message conversion error; message rejected; it will be dropped or routed to a dead letter exchange, if so configured: (Body:'{"jobId":"6","jobName":"job_name_test","jobGroup":"job_group_test","jobStatus":"Normal","cronExpression":"0/5 * * * * ?","desc":"i am job number test","interfaceName":"test"}' MessageProperties [headers={__TypeId__=com.jverson.quartz.job.ScheduleJob}, timestamp=null, messageId=null, userId=null, receivedUserId=null, appId=null, clusterId=null, type=null, correlationId=null, correlationIdString=null, replyTo=null, contentType=application/json, contentEncoding=UTF-8, contentLength=0, deliveryMode=null, receivedDeliveryMode=PERSISTENT, expiration=null, priority=0, redelivered=false, receivedExchange=jsa.exchange, receivedRoutingKey=jsa.routingkey, receivedDelay=null, deliveryTag=1, messageCount=0, consumerTag=amq.ctag-IRU8_KLvOeXwQyE3qNApWA, consumerQueue=jsa.queue])
+2018-07-23 11:42:02.106  INFO 24686 --- [Thread-4] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6b19b79: startup date [Mon Jul 23 11:40:16 CET 2018]; root of context hierarchy
+2018-07-23 11:42:02.107  INFO 24686 --- [Thread-4] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-07-23 11:42:02.109  INFO 24686 --- [Thread-4] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2018-07-23 11:42:02.283  INFO 24686 --- [Thread-4] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2018-07-23 11:42:02.284  INFO 24686 --- [Thread-4] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2018-07-23 11:42:02.285  INFO 24686 --- [Thread-4] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-23 11:42:02.286  INFO 24686 --- [Thread-4] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-07-23 11:42:04.309  INFO 24923 --- [main] c.j.r.SpringRabbitMqProducerApplication  : Starting SpringRabbitMqProducerApplication on asus-X550JK with PID 24923 (started by asus in /home/asus/workspace intellij/exmple rabbitmq/exmple de quartz job/springboot-quartz-master)
+2018-07-23 11:42:04.311  INFO 24923 --- [main] c.j.r.SpringRabbitMqProducerApplication  : No active profile set, falling back to default profiles: default
+2018-07-23 11:42:04.342  INFO 24923 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6b19b79: startup date [Mon Jul 23 11:42:04 CET 2018]; root of context hierarchy
+2018-07-23 11:42:04.791  INFO 24923 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$9718142c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-23 11:42:05.129  INFO 24923 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-23 11:42:05.133  INFO 24923 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-07-23 11:42:05.135  INFO 24923 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-07-23 11:42:05.193  INFO 24923 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2018-07-23 11:42:05.193  INFO 24923 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-07-23 11:42:05.211  INFO 24923 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#1bbeb850:0/SimpleConnection@2c0876ae [delegate=amqp://guest@127.0.0.1:5672/, localPort= 36382]
+2018-07-23 11:42:05.213  INFO 24923 --- [SimpleAsyncTaskExecutor-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (jsa.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2018-07-23 11:42:05.268  INFO 24923 --- [main] c.j.r.SpringRabbitMqProducerApplication  : Started SpringRabbitMqProducerApplication in 1.176 seconds (JVM running for 1.562)
+2018-07-23 11:42:05.274  WARN 24923 --- [SimpleAsyncTaskExecutor-1] s.a.r.l.ConditionalRejectingErrorHandler : Execution of Rabbit message listener failed.
+
+org.springframework.amqp.rabbit.listener.exception.ListenerExecutionFailedException: Listener threw exception
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.wrapToListenerExecutionFailedExceptionIfNeeded(AbstractMessageListenerContainer.java:915)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:825)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:745)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$001(SimpleMessageListenerContainer.java:97)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$1.invokeListener(SimpleMessageListenerContainer.java:189)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.invokeListener(SimpleMessageListenerContainer.java:1276)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListener(AbstractMessageListenerContainer.java:726)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doReceiveAndExecute(SimpleMessageListenerContainer.java:1219)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.receiveAndExecute(SimpleMessageListenerContainer.java:1189)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1500(SimpleMessageListenerContainer.java:97)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1421)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.amqp.support.converter.MessageConversionException: failed to resolve class name. Class not found [com.jverson.quartz.job.ScheduleJob]
+	at org.springframework.amqp.support.converter.DefaultJackson2JavaTypeMapper.getClassIdType(DefaultJackson2JavaTypeMapper.java:121)
+	at org.springframework.amqp.support.converter.DefaultJackson2JavaTypeMapper.toJavaType(DefaultJackson2JavaTypeMapper.java:88)
+	at org.springframework.amqp.support.converter.Jackson2JsonMessageConverter.fromMessage(Jackson2JsonMessageConverter.java:163)
+	at org.springframework.amqp.rabbit.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:236)
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter$MessagingMessageConverterAdapter.extractPayload(MessagingMessageListenerAdapter.java:216)
+	at org.springframework.amqp.support.converter.MessagingMessageConverter.fromMessage(MessagingMessageConverter.java:118)
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.toMessagingMessage(MessagingMessageListenerAdapter.java:116)
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:102)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:822)
+	... 10 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.jverson.quartz.job.ScheduleJob
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:250)
+	at org.springframework.amqp.support.converter.DefaultJackson2JavaTypeMapper.getClassIdType(DefaultJackson2JavaTypeMapper.java:118)
+	... 18 common frames omitted
+
+2018-07-23 11:42:05.275  WARN 24923 --- [SimpleAsyncTaskExecutor-1] ingErrorHandler$DefaultExceptionStrategy : Fatal message conversion error; message rejected; it will be dropped or routed to a dead letter exchange, if so configured: (Body:'{"jobId":"6","jobName":"job_name_test","jobGroup":"job_group_test","jobStatus":"Normal","cronExpression":"0/5 * * * * ?","desc":"i am job number test","interfaceName":"test"}' MessageProperties [headers={__TypeId__=com.jverson.quartz.job.ScheduleJob}, timestamp=null, messageId=null, userId=null, receivedUserId=null, appId=null, clusterId=null, type=null, correlationId=null, correlationIdString=null, replyTo=null, contentType=application/json, contentEncoding=UTF-8, contentLength=0, deliveryMode=null, receivedDeliveryMode=PERSISTENT, expiration=null, priority=0, redelivered=false, receivedExchange=jsa.exchange, receivedRoutingKey=jsa.routingkey, receivedDelay=null, deliveryTag=1, messageCount=0, consumerTag=amq.ctag-4lEhMv8adP2x0iHtMcdqZA, consumerQueue=jsa.queue])
+2018-07-23 11:42:18.091  INFO 24923 --- [Thread-4] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6b19b79: startup date [Mon Jul 23 11:42:04 CET 2018]; root of context hierarchy
+2018-07-23 11:42:18.093  INFO 24923 --- [Thread-4] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-07-23 11:42:18.094  INFO 24923 --- [Thread-4] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2018-07-23 11:42:18.282  INFO 24923 --- [Thread-4] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2018-07-23 11:42:18.283  INFO 24923 --- [Thread-4] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2018-07-23 11:42:18.284  INFO 24923 --- [Thread-4] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-23 11:42:18.284  INFO 24923 --- [Thread-4] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-07-23 11:42:19.421  INFO 25152 --- [main] c.j.r.SpringRabbitMqProducerApplication  : Starting SpringRabbitMqProducerApplication on asus-X550JK with PID 25152 (started by asus in /home/asus/workspace intellij/exmple rabbitmq/exmple de quartz job/springboot-quartz-master)
+2018-07-23 11:42:19.423  INFO 25152 --- [main] c.j.r.SpringRabbitMqProducerApplication  : No active profile set, falling back to default profiles: default
+2018-07-23 11:42:19.456  INFO 25152 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6b19b79: startup date [Mon Jul 23 11:42:19 CET 2018]; root of context hierarchy
+2018-07-23 11:42:19.881  INFO 25152 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$58f4229] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-23 11:42:20.237  INFO 25152 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-23 11:42:20.241  INFO 25152 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-07-23 11:42:20.242  INFO 25152 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-07-23 11:42:20.298  INFO 25152 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2018-07-23 11:42:20.298  INFO 25152 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-07-23 11:42:20.316  INFO 25152 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4f6cf20b:0/SimpleConnection@af4d620 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 36422]
+2018-07-23 11:42:20.318  INFO 25152 --- [SimpleAsyncTaskExecutor-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (jsa.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2018-07-23 11:42:20.367  INFO 25152 --- [main] c.j.r.SpringRabbitMqProducerApplication  : Started SpringRabbitMqProducerApplication in 1.161 seconds (JVM running for 1.533)
+2018-07-23 11:44:22.257  INFO 25152 --- [Thread-4] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6b19b79: startup date [Mon Jul 23 11:42:19 CET 2018]; root of context hierarchy
+2018-07-23 11:44:22.259  INFO 25152 --- [Thread-4] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-07-23 11:44:22.261  INFO 25152 --- [Thread-4] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2018-07-23 11:44:22.834  INFO 25152 --- [Thread-4] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2018-07-23 11:44:22.835  INFO 25152 --- [Thread-4] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2018-07-23 11:44:22.837  INFO 25152 --- [Thread-4] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-23 11:44:22.837  INFO 25152 --- [Thread-4] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-07-23 11:44:24.038  INFO 25504 --- [main] c.j.r.SpringRabbitMqProducerApplication  : Starting SpringRabbitMqProducerApplication on asus-X550JK with PID 25504 (started by asus in /home/asus/workspace intellij/exmple rabbitmq/exmple de quartz job/springboot-quartz-master)
+2018-07-23 11:44:24.040  INFO 25504 --- [main] c.j.r.SpringRabbitMqProducerApplication  : No active profile set, falling back to default profiles: default
+2018-07-23 11:44:24.074  INFO 25504 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6b19b79: startup date [Mon Jul 23 11:44:24 CET 2018]; root of context hierarchy
+2018-07-23 11:44:24.537  INFO 25504 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$d198cad4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-23 11:44:24.887  INFO 25504 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-23 11:44:24.892  INFO 25504 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-07-23 11:44:24.893  INFO 25504 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-07-23 11:44:24.977  INFO 25504 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2018-07-23 11:44:24.977  INFO 25504 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-07-23 11:44:24.996  INFO 25504 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4c3cb327:0/SimpleConnection@347700f [delegate=amqp://guest@127.0.0.1:5672/, localPort= 36488]
+2018-07-23 11:44:24.997  INFO 25504 --- [SimpleAsyncTaskExecutor-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (jsa.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2018-07-23 11:44:25.056  INFO 25504 --- [main] c.j.r.SpringRabbitMqProducerApplication  : Started SpringRabbitMqProducerApplication in 1.231 seconds (JVM running for 1.669)
+2018-07-23 11:46:23.349  INFO 25504 --- [Thread-5] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6b19b79: startup date [Mon Jul 23 11:44:24 CET 2018]; root of context hierarchy
+2018-07-23 11:46:23.350  INFO 25504 --- [Thread-5] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-07-23 11:46:23.352  INFO 25504 --- [Thread-5] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2018-07-23 11:46:24.162  INFO 25504 --- [Thread-5] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2018-07-23 11:46:24.162  INFO 25504 --- [Thread-5] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2018-07-23 11:46:24.163  INFO 25504 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-23 11:46:24.163  INFO 25504 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-07-23 11:46:26.161  INFO 25866 --- [main] c.j.r.SpringRabbitMqProducerApplication  : Starting SpringRabbitMqProducerApplication on asus-X550JK with PID 25866 (started by asus in /home/asus/workspace intellij/exmple rabbitmq/exmple de quartz job/springboot-quartz-master)
+2018-07-23 11:46:26.163  INFO 25866 --- [main] c.j.r.SpringRabbitMqProducerApplication  : No active profile set, falling back to default profiles: default
+2018-07-23 11:46:26.199  INFO 25866 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6b19b79: startup date [Mon Jul 23 11:46:26 CET 2018]; root of context hierarchy
+2018-07-23 11:46:26.643  INFO 25866 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$46aaab49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-23 11:46:26.984  INFO 25866 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-23 11:46:26.989  INFO 25866 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-07-23 11:46:26.990  INFO 25866 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-07-23 11:46:27.053  INFO 25866 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2018-07-23 11:46:27.053  INFO 25866 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-07-23 11:46:27.071  INFO 25866 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#2a93fbee:0/SimpleConnection@2545088a [delegate=amqp://guest@127.0.0.1:5672/, localPort= 36552]
+2018-07-23 11:46:27.073  INFO 25866 --- [SimpleAsyncTaskExecutor-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (jsa.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2018-07-23 11:46:27.133  INFO 25866 --- [main] c.j.r.SpringRabbitMqProducerApplication  : Started SpringRabbitMqProducerApplication in 1.196 seconds (JVM running for 1.554)
+2018-07-23 11:46:43.227  INFO 25866 --- [Thread-4] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6b19b79: startup date [Mon Jul 23 11:46:26 CET 2018]; root of context hierarchy
+2018-07-23 11:46:43.228  INFO 25866 --- [Thread-4] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-07-23 11:46:43.230  INFO 25866 --- [Thread-4] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2018-07-23 11:46:43.590  INFO 25866 --- [Thread-4] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2018-07-23 11:46:43.590  INFO 25866 --- [Thread-4] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2018-07-23 11:46:43.591  INFO 25866 --- [Thread-4] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-23 11:46:43.591  INFO 25866 --- [Thread-4] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-07-23 11:46:48.490  INFO 25966 --- [main] c.j.r.SpringRabbitMqProducerApplication  : Starting SpringRabbitMqProducerApplication on asus-X550JK with PID 25966 (started by asus in /home/asus/workspace intellij/exmple rabbitmq/exmple de quartz job/springboot-quartz-master)
+2018-07-23 11:46:48.492  INFO 25966 --- [main] c.j.r.SpringRabbitMqProducerApplication  : No active profile set, falling back to default profiles: default
+2018-07-23 11:46:48.533  INFO 25966 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7f1302d6: startup date [Mon Jul 23 11:46:48 CET 2018]; root of context hierarchy
+2018-07-23 11:46:48.931  INFO 25966 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$c98aa6a7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-23 11:46:49.268  INFO 25966 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-23 11:46:49.273  INFO 25966 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-07-23 11:46:49.274  INFO 25966 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-07-23 11:46:49.359  INFO 25966 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2018-07-23 11:46:49.359  INFO 25966 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-07-23 11:46:49.379  INFO 25966 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#18aa4327:0/SimpleConnection@425bb2af [delegate=amqp://guest@127.0.0.1:5672/, localPort= 36570]
+2018-07-23 11:46:49.381  INFO 25966 --- [SimpleAsyncTaskExecutor-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (jsa.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2018-07-23 11:46:49.435  INFO 25966 --- [main] c.j.r.SpringRabbitMqProducerApplication  : Started SpringRabbitMqProducerApplication in 1.148 seconds (JVM running for 1.48)
+2018-07-23 11:46:49.447  WARN 25966 --- [SimpleAsyncTaskExecutor-1] s.a.r.l.ConditionalRejectingErrorHandler : Execution of Rabbit message listener failed.
+
+org.springframework.amqp.rabbit.listener.exception.ListenerExecutionFailedException: Listener threw exception
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.wrapToListenerExecutionFailedExceptionIfNeeded(AbstractMessageListenerContainer.java:915)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:825)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:745)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$001(SimpleMessageListenerContainer.java:97)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$1.invokeListener(SimpleMessageListenerContainer.java:189)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.invokeListener(SimpleMessageListenerContainer.java:1276)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListener(AbstractMessageListenerContainer.java:726)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doReceiveAndExecute(SimpleMessageListenerContainer.java:1219)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.receiveAndExecute(SimpleMessageListenerContainer.java:1189)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1500(SimpleMessageListenerContainer.java:97)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1421)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.amqp.support.converter.MessageConversionException: Failed to convert Message content
+	at org.springframework.amqp.support.converter.Jackson2JsonMessageConverter.fromMessage(Jackson2JsonMessageConverter.java:175)
+	at org.springframework.amqp.rabbit.listener.adapter.AbstractAdaptableMessageListener.extractMessage(AbstractAdaptableMessageListener.java:236)
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter$MessagingMessageConverterAdapter.extractPayload(MessagingMessageListenerAdapter.java:216)
+	at org.springframework.amqp.support.converter.MessagingMessageConverter.fromMessage(MessagingMessageConverter.java:118)
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.toMessagingMessage(MessagingMessageListenerAdapter.java:116)
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:102)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:822)
+	... 10 common frames omitted
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.lang.String out of START_OBJECT token
+ at [Source: {"jobId":"6","jobName":"job_name_test","jobGroup":"job_group_test","jobStatus":"Normal","cronExpression":"0/5 * * * * ?","desc":"i am job number test","interfaceName":"test"}; line: 1, column: 1]
+	at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:270)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportMappingException(DeserializationContext.java:1234)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1122)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1075)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:60)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:11)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3798)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2880)
+	at org.springframework.amqp.support.converter.Jackson2JsonMessageConverter.convertBytesToObject(Jackson2JsonMessageConverter.java:194)
+	at org.springframework.amqp.support.converter.Jackson2JsonMessageConverter.fromMessage(Jackson2JsonMessageConverter.java:164)
+	... 16 common frames omitted
+
+2018-07-23 11:46:49.448  WARN 25966 --- [SimpleAsyncTaskExecutor-1] ingErrorHandler$DefaultExceptionStrategy : Fatal message conversion error; message rejected; it will be dropped or routed to a dead letter exchange, if so configured: (Body:'{"jobId":"6","jobName":"job_name_test","jobGroup":"job_group_test","jobStatus":"Normal","cronExpression":"0/5 * * * * ?","desc":"i am job number test","interfaceName":"test"}' MessageProperties [headers={__TypeId__=com.javasampleapproach.rabbitmq.model.Job}, timestamp=null, messageId=null, userId=null, receivedUserId=null, appId=null, clusterId=null, type=null, correlationId=null, correlationIdString=null, replyTo=null, contentType=application/json, contentEncoding=UTF-8, contentLength=0, deliveryMode=null, receivedDeliveryMode=PERSISTENT, expiration=null, priority=0, redelivered=false, receivedExchange=jsa.exchange, receivedRoutingKey=jsa.routingkey, receivedDelay=null, deliveryTag=1, messageCount=0, consumerTag=amq.ctag-PME0jbTWOy5VzJXJSAixDw, consumerQueue=jsa.queue])
+2018-07-23 11:47:06.433  INFO 25966 --- [Thread-4] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7f1302d6: startup date [Mon Jul 23 11:46:48 CET 2018]; root of context hierarchy
+2018-07-23 11:47:06.434  INFO 25966 --- [Thread-4] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-07-23 11:47:06.436  INFO 25966 --- [Thread-4] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2018-07-23 11:47:06.455  INFO 25966 --- [Thread-4] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2018-07-23 11:47:06.455  INFO 25966 --- [Thread-4] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2018-07-23 11:47:06.456  INFO 25966 --- [Thread-4] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-23 11:47:06.456  INFO 25966 --- [Thread-4] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-07-23 11:47:07.500  INFO 26205 --- [main] c.j.r.SpringRabbitMqProducerApplication  : Starting SpringRabbitMqProducerApplication on asus-X550JK with PID 26205 (started by asus in /home/asus/workspace intellij/exmple rabbitmq/exmple de quartz job/springboot-quartz-master)
+2018-07-23 11:47:07.502  INFO 26205 --- [main] c.j.r.SpringRabbitMqProducerApplication  : No active profile set, falling back to default profiles: default
+2018-07-23 11:47:07.536  INFO 26205 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6b19b79: startup date [Mon Jul 23 11:47:07 CET 2018]; root of context hierarchy
+2018-07-23 11:47:07.983  INFO 26205 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$fb7101b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-23 11:47:08.374  INFO 26205 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-23 11:47:08.379  INFO 26205 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-07-23 11:47:08.380  INFO 26205 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-07-23 11:47:08.457  INFO 26205 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2018-07-23 11:47:08.458  INFO 26205 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-07-23 11:47:08.475  INFO 26205 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#36db0ffe:0/SimpleConnection@39d2b4f9 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 36622]
+2018-07-23 11:47:08.477  INFO 26205 --- [SimpleAsyncTaskExecutor-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (jsa.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2018-07-23 11:47:08.539  INFO 26205 --- [main] c.j.r.SpringRabbitMqProducerApplication  : Started SpringRabbitMqProducerApplication in 1.253 seconds (JVM running for 1.609)
+2018-07-23 11:53:26.535  INFO 26205 --- [Thread-5] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6b19b79: startup date [Mon Jul 23 11:47:07 CET 2018]; root of context hierarchy
+2018-07-23 11:53:26.537  INFO 26205 --- [Thread-5] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-07-23 11:53:26.541  INFO 26205 --- [Thread-5] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2018-07-23 11:53:27.102  INFO 26205 --- [Thread-5] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2018-07-23 11:53:27.103  INFO 26205 --- [Thread-5] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2018-07-23 11:53:27.103  INFO 26205 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-23 11:53:27.103  INFO 26205 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans

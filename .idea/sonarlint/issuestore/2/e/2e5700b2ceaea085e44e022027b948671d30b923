@@ -1,0 +1,7 @@
+
+T
+squid:S106$"9Replace this use of System.out or System.err by a logger.(ëƒÿÑúÿÿÿÿ
+rsquid:UselessImportCheck"IRemove this unused import 'org.springframework.amqp.core.DirectExchange'.(ìÉÕÀùÿÿÿÿ
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(†éš8ŸşĞÙÎ,
+T
+squid:S106*"9Replace this use of System.out or System.err by a logger.(Å­Ëİúÿÿÿÿ
