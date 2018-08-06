@@ -390,7 +390,7 @@
     <property name="SearchEverywhereHistoryKey" value="getId&#9;PSI&#9;JAVA://com.javasampleapproach.rabbitmq.model.Job#getJobId&#10;Job&#9;FILE&#9;file:///home/asus/workspace intellij/exmple rabbitmq/exmple de quartz job/Job/Qurtez_job/src/main/java/com/jverson/quartz/job/job.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533557202295" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533557220364" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
