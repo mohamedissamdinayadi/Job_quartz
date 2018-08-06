@@ -22,10 +22,6 @@ public class Producer {
     @Value("${jsa.rabbitmq.routingkey}")
     private String routingkey;
 
-    @Autowired
-    private RabbitTemplate template;
-
-
 //    public void producejob(ScheduleJob job) {
 //        amqpTemplate.convertAndSend(exchange, routingkey, job);
 //        System.out.println("Send msg = " + job);
@@ -41,7 +37,7 @@ public class Producer {
 
         System.out.println(s);
 
+        //amqpTemplate.convertAndSend("jsa.exchange", "routingkey.unity","job ...");
     }
-
 
 }

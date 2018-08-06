@@ -1,6 +1,8 @@
 
-Fsquid:S1068"*Remove this unused "logger" private field.(íæÑ‹üÿÿÿÿ
-osquid:ModifiersOrderCheck*"EReorder the modifiers to comply with the Java Language Specification.(Š¿ÒÑûÿÿÿÿ
-?squid:S1148Q"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-Fsquid:S1148b"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ÅÐÙÚÎ,
-nsquid:CommentedOutCodeLinel"<This block of commented-out lines of code should be removed.(æ¢’¯ýÿÿÿÿ8ÅÐÙÚÎ,
+tsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(Š¿ÒÑûÿÿÿÿ8ÛÄá÷Ï,
+Ksquid:S1068"*Remove this unused "logger" private field.(íæÑ‹üÿÿÿÿ8ÛÄá÷Ï,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(áõæú8ÛÄá÷Ï,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Á³”³8ÛÄá÷Ï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ÛÄá÷Ï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ÛÄá÷Ï,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ÛÄá÷Ï,

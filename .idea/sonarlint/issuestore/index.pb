@@ -33,3 +33,5 @@ r
 BQurtez_job/src/main/java/com/jverson/quartz/Job_db/JobService.java,3/7/373bdd803e4d96f4bba8ada3c18c881434113818
 r
 BQurtez_job/src/main/java/com/jverson/quartz/mq/RabbitMqConfig.java,5/5/55d436a7fdb8806e086c55e08aa497f47df6551a
+u
+EQurtez_job/src/main/java/com/jverson/quartz/Job_db/JobRepository.java,2/a/2a692be6185e43bc8870431c5017e634e25bab28

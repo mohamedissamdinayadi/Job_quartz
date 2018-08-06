@@ -29,9 +29,13 @@ public class JobService {
         jobRepository.delete(id);
     }
 
-    public void updatestatus(ScheduleJob job) {
+    public void updatestatuspause(ScheduleJob job) {
         job.setJobStatus("paused");
         jobRepository.save(job);
     }
 
+    public void updatestatusstart(ScheduleJob job) {
+        job.setJobStatus("started");
+        jobRepository.save(job);
+    }
 }

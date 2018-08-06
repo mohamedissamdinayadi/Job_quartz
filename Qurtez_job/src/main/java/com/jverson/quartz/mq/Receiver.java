@@ -29,11 +29,11 @@ public class Receiver {
     @Value("${jsa.rabbitmq.routingkey}")
     private String routingkey;
 
-    @Value("${jsa.rabbitmq.routingkey.add}")
-    private String routingkeyadd;
-
-    @Value("${jsa.rabbitmq.routingkey.pause}")
-    private String routingkeypause;
+    //    @Value("${jsa.rabbitmq.routingkey.add}")
+//    private String routingkeyadd;
+//
+//    @Value("${jsa.rabbitmq.routingkey.pause}")
+//    private String routingkeypause;
     @Autowired
     private JobService jobService;
     @Autowired
@@ -48,34 +48,38 @@ public class Receiver {
     }
 
 
+    private boolean existe(ScheduleJob job) {
+        Boolean existe = false;
+        List<ScheduleJob> list = jobRepository.findAll();
+        for (ScheduleJob s : list
+                ) {
+            if (s.getJobName().equals(job.getJobName()) && s.getJobGroup().equals(job.getJobGroup())) {
+                existe = true;
+            } else {
+                existe = false;
+            }
+
+        }
+        return existe;
+    }
+
     @RabbitListener(queues = "${jsa.rabbitmq.queue.add}", containerFactory = "jsaFactory")
     public void recievedMessageAdd(ScheduleJob job) {
-        Boolean existe = false;
         //Configure Job (Name, group, scheduler()
-
         //Create job: how ?
-
         try {
-            //add job to scheduler and start it
-            List<ScheduleJob> list = jobRepository.getAllByJobStatus();
-            for (ScheduleJob s : list
-                    ) {
-                if (s.getJobName().equals(job.getJobName()) && s.getJobGroup().equals(job.getJobGroup())) {
-                    existe = true;
-                }
 
-            }
-            if ((!existe)) {
+            if ((!existe(job))) {
+                //add job to scheduler and start it
                 scheduleJobService.addJob(job);
                 //save job in data base
                 jobService.save(job);
 
                 amqpTemplate.convertAndSend(exchange, routingkey, "job created");
 
+            } else {
+                amqpTemplate.convertAndSend(exchange, routingkey, "job already exists");
             }
-            else {
-                amqpTemplate.convertAndSend(exchange, routingkey, "you can't");
-          }
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -85,42 +89,44 @@ public class Receiver {
     }
 
 
-  @RabbitListener(queues = "${jsa.rabbitmq.queue.pause}", containerFactory = "jsaFactory")
+    @RabbitListener(queues = "${jsa.rabbitmq.queue.pause}", containerFactory = "jsaFactory")
     public void recievedMessagePause(ScheduleJob job) {
 
         try {
-            //pause job into scheduler
-            scheduleJobService.pauseJob(job);
-            //update job status in data base
-            jobService.updatestatus(job);
-
+            if ((existe(job))) {
+                //pause job into scheduler
+                scheduleJobService.pauseJob(job);
+                //update job status in data base
+                jobService.updatestatuspause(job);
+                amqpTemplate.convertAndSend(exchange, routingkey, "job paused");
+            } else {
+                amqpTemplate.convertAndSend(exchange, routingkey, "job not exists");
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        amqpTemplate.convertAndSend(exchange, routingkey, "job paused");
 
 
     }
 
-/*
-    @RabbitListener(queues = "${jsa.rabbitmq.queue}", containerFactory = "jsaFactory")
-    public void recievedMessagedelete(ScheduleJob job) {
 
+    @RabbitListener(queues = "${jsa.rabbitmq.queue.resume}", containerFactory = "jsaFactory")
+    public void recievedMessageresume(ScheduleJob job) {
         try {
-            //pause job into scheduler
-            scheduleJobService.deleteJob(job);
-            //update job status in data base
-            jobService.deleteJob(job.getJobId());
-
+            if ((existe(job))) {
+                //resume job into scheduler
+                scheduleJobService.resumeJob(job);
+                //update job status in data base
+                jobService.updatestatusstart(job);
+                amqpTemplate.convertAndSend(exchange, routingkey, "job resume");
+            } else {
+                amqpTemplate.convertAndSend(exchange, routingkey, "job not exists");
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        amqpTemplate.convertAndSend(exchange, routingkey, "job paused");
-
-
-    }*/
+    }
 }
 
 
