@@ -1,8 +1,11 @@
-package com.example.oauth2monday.data.entity;
+package com.squeezer.oauth2.data.entity;
 
 import org.springframework.security.core.GrantedAuthority;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "authority")
@@ -42,6 +45,14 @@ public class Authority implements GrantedAuthority {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Override

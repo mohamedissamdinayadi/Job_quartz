@@ -1,6 +1,6 @@
-package com.example.oauth2monday.data.repository;
+package com.squeezer.oauth2.data.repository;
 
-import com.example.oauth2monday.data.entity.Authority;
+import com.squeezer.oauth2.data.entity.Authority;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

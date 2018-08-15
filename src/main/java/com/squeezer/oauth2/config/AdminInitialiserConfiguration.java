@@ -1,10 +1,10 @@
-package com.example.oauth2monday.config;
+package com.squeezer.oauth2.config;
 
 
-import com.example.oauth2monday.data.entity.Authority;
-import com.example.oauth2monday.data.entity.User;
-import com.example.oauth2monday.data.repository.AuthorityRepository;
-import com.example.oauth2monday.data.repository.UserRepository;
+import com.squeezer.oauth2.data.entity.Authority;
+import com.squeezer.oauth2.data.entity.User;
+import com.squeezer.oauth2.data.repository.AuthorityRepository;
+import com.squeezer.oauth2.data.repository.UserRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,9 +16,9 @@ public class AdminInitialiserConfiguration {
     /**
      * This Method creates ADMIN role and ADMIN user if they don't already exist
      *
-     * @param userRepository
-     * @param authorityRepository
-     * @param passwordEncoder
+     * @param userRepository      The repository of the user
+     * @param authorityRepository The repository of the authority
+     * @param passwordEncoder     This attribute encode password
      */
     @Bean
     public CommandLineRunner initAdministrator(UserRepository userRepository, AuthorityRepository authorityRepository, PasswordEncoder passwordEncoder) {

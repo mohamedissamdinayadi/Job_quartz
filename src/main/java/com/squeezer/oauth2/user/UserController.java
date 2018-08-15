@@ -1,4 +1,4 @@
-package com.example.oauth2monday.user;
+package com.squeezer.oauth2.user;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;

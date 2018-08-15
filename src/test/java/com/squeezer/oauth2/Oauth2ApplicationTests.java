@@ -1,4 +1,4 @@
-package com.example.oauth2monday;
+package com.squeezer.oauth2;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class Oauth2mondayApplicationTests {
+public class Oauth2ApplicationTests {
 
 	@Test
 	public void contextLoads() {

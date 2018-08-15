@@ -1,4 +1,4 @@
-package com.example.oauth2monday.config;
+package com.squeezer.oauth2.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

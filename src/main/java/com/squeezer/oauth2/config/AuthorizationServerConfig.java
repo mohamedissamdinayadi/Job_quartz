@@ -1,10 +1,11 @@
-package com.example.oauth2monday.config;
+package com.squeezer.oauth2.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Primary;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -32,15 +33,23 @@ import javax.sql.DataSource;
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
 
-    @Autowired
-    @Qualifier("dataSource")
-    private DataSource dataSource;
+
+    private static final String TRUSTED_CLIENT_ID = "squeezer";
+    private static final String TRUSTED_CLIENT_PASSWORD = "squeezer";
+
+    private final DataSource dataSource;
+    private final AuthenticationManager authenticationManager;
+    private final UserDetailsService userDetailsService;
 
     @Autowired
-    private AuthenticationManager authenticationManager;
+    public AuthorizationServerConfig(@Qualifier("dataSource") DataSource dataSource, AuthenticationManager authenticationManager, @Lazy @Qualifier("userDetailsService") UserDetailsService userDetailsService) {
+        this.dataSource = dataSource;
+        this.authenticationManager = authenticationManager;
+        this.userDetailsService = userDetailsService;
+    }
 
     @Bean
-    public PasswordEncoder passwordEncoder(){
+    public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
@@ -51,9 +60,6 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     @Value("60")
     private int refreshTokenExpiration;
 
-    @Autowired
-    @Qualifier("userDetailsService")
-    private UserDetailsService userDetailsService;
 
     @Bean
     public TokenStore tokenStore() {
@@ -70,13 +76,13 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     }
 
     /**
-     * Setting up the endpointsconfigurer authentication manager.
+     * Setting up the endpointsConfigurer authentication manager.
      * The AuthorizationServerEndpointsConfigurer defines the authorization and token endpoints and the token services.
-     * @param endpoints
-     * @throws Exception
+     *
+     * @param endpoints endpoints of WBS
      */
     @Override
-    public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
+    public void configure(AuthorizationServerEndpointsConfigurer endpoints) {
         endpoints.authenticationManager(authenticationManager);
         endpoints.tokenStore(tokenStore());
         endpoints.userDetailsService(userDetailsService);
@@ -86,15 +92,16 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
     /**
      * Setting up the clients with a clientId, a clientSecret, a scope, the grant types and the authorities.
-     * @param clients
-     * @throws Exception
+     *
+     * @param clients The oAuth2 client
+     * @throws Exception throw exceptions
      */
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients
                 .inMemory()
-                .withClient("squeezer")
-                .secret(passwordEncoder().encode("squeezer"))
+                .withClient(TRUSTED_CLIENT_ID)
+                .secret(passwordEncoder().encode(TRUSTED_CLIENT_PASSWORD))
                 // grant type
                 .authorizedGrantTypes("refresh_token", "password")
                 // for specify authority of a client
@@ -102,7 +109,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 // expire time for refresh token
                 .refreshTokenValiditySeconds(refreshTokenExpiration)
                 // scope related to resource server
-                .scopes("read","write")
+                .scopes("read", "write")
                 // id for resource client
 //                .resourceIds("oauth2-resource")
                 // expire time for access token in seconds
@@ -112,11 +119,11 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     /**
      * We here defines the security constraints on the token endpoint.
      * We set it up to isAuthenticated, which returns true if the user is not anonymous
+     *
      * @param oauthServer the AuthorizationServerSecurityConfigurer.
-     * @throws Exception
      */
     @Override
-    public void configure(AuthorizationServerSecurityConfigurer oauthServer) throws Exception {
+    public void configure(AuthorizationServerSecurityConfigurer oauthServer) {
 //        oauthServer.tokenKeyAccess("permitAll()");
         oauthServer.checkTokenAccess("isAuthenticated()");
         oauthServer.allowFormAuthenticationForClients();
