@@ -26,7 +26,7 @@
     <session id="1521353799">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.7" value="1" />
@@ -127,7 +127,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Qurtez_job/src/main/java/com/jverson/quartz/conf/SchedulerConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
+            <state relative-caret-position="-129">
               <caret line="53" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -1202,12 +1202,12 @@
       <updated>1535722018807</updated>
       <workItem from="1535722022598" duration="2827000" />
       <workItem from="1535724907810" duration="4297000" />
-      <workItem from="1535751523697" duration="740000" />
+      <workItem from="1535751523697" duration="1565000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7705000" />
+    <option name="totallyTimeSpent" value="8689000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -1365,7 +1365,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Qurtez_job/src/main/java/com/jverson/quartz/conf/SchedulerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
+        <state relative-caret-position="-129">
           <caret line="53" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="imports" expanded="true" />
